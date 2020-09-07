@@ -36,8 +36,9 @@ void IncreaseSize(Sequencelist &L,int len){
 int main(){
     Sequencelist L;//声明一个顺序表
     Sequencelist *pL;
-    for(int i=0;i<L.length;i++){
+    for(int i=0;i<L.MaxSize;i++){
         L.data[i]=0104;
+        L.length++;
     }//插入几个数
     InitList(L);//初始化顺序表
     IncreaseSize(L,5);//增加动态数组的长度
