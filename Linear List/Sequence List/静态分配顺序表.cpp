@@ -14,8 +14,8 @@ typedef struct{
 }Sequencelist;
 
 void Initlist(Sequencelist &L){
-	for(int i=0;i<MaxSize;i++)	L.data[i]=0;
-	L.length=0;
+	for(int i=0;i<MaxSize;i++)	L.data[i]=0;//初始化数组元素为0 
+	L.length=0;//顺序表初始长度为0 
 }
 
 int main(){
